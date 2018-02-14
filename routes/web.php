@@ -14,6 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/inteligencia', function () {
+    return view('layouts.inteligencia');
+});
+Route::get('/analisis', function () {
+    return view('layouts.analisis');
+});
 
 Auth::routes();
 

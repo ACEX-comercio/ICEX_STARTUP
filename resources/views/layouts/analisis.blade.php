@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!-- Altron - Multi-Purpose Landing Page Template design by DSAThemes (http://www.dsathemes.com) -->
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html class=" js no-touch" lang="en"><!--<![endif]--><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -105,7 +100,7 @@
 								<li><a href="/">Inicio</a></li>															
 								<li><a href="/inteligencia">Inteligencia comercial</a></li>
 								<li><a href="/analisis">Analisis de mercado</a></li>	
-								<li><a href="#pricing">Planes y productos</a></li>	
+								<li><a href="/./#pricing">Planes y productos</a></li>	
 							</ul>
 						</nav>  <!-- End Navigation Menu -->
 						
@@ -122,8 +117,6 @@
 				<div class="overlay division">
 					<div class="container">		
 						<div id="intro-7-content" class="row">
-							
-							
 							<!-- INTRO TEXT -->
 							<div class="col-md-10 col-md-offset-1 intro-txt text-center white-color">
 								
@@ -131,11 +124,8 @@
 								<h2>La herramienta para venta y exportacion que estabas esperando</h2>	
 
 								<!-- Button -->
-								<a class="btn btn-lg btn-tra m-top-10" href="#">Pruevalo Gratis</a>		
-									
+								<a class="btn btn-lg btn-tra m-top-5" href="#">Pruevalo Gratis</a>		
 							</div>
-
-																
 						</div>	 <!-- End Intro Content -->
 					</div>    <!-- End container -->
 				</div>	   <!-- End overlay -->
@@ -143,173 +133,9 @@
 		
 		
 		
-			<!-- WELCOME
-			============================================= -->
-			<section id="welcome" class="wide-50 welcome-section division">
-				<div class="container">		
-					<div class="row">
-					
-					
-						<!-- WELCOME QUOTE -->
-						<div class="col-lg-4 welcome-quote text-right m-bottom-50">
-						
-							<!-- Quote -->
-							<h3>La herramienta mas rapida del mercado con inteligecia comercial</p>
-														
-						</div>
-						
-						
-						<!-- WELCOME TEXT -->
-						<div class="col-md-6 col-lg-4 welcome-txt m-bottom-50">
-							
-							<!-- Text -->
-							<div class="p-bottom-20">
-							
-								<p>Icex una plataforma que te permite ver a todos lo exportadores e inportadores de latinoamerica, gracias anuestro sistema de inteligencia comercial podras obtener datos presisos en la busqueda que usted desea
-								</p>
-								
-							</div>
-							
-							<!-- Slogan -->
-							<div class="slogan-txt b-top p-top-20 p-bottom-20">
-								<h4 class="h4-lg">tomas deciciones acertadas y concisas y comiensa a utilizar ICEX </h4>							
-							</div>
-						
-						</div>
-						
-						
-						<!-- WELCOME IMAGE -->
-						<div class="col-md-6 col-lg-4 welcome-img m-bottom-50">
-							<img class="img-responsive" src="images/welcome.jpg" alt="welcome-image">														
-						</div>
-					
-					
-					</div>	  <!-- End row -->  
-				</div>	   <!-- End container -->
-			</section>	<!-- END WELCOME -->
-						
-			<!-- PRICING
-			============================================= -->
-			<section id="pricing" class="wide-50 pricing-section division">
-				<div class="container">
-
-					
-					<!-- TITLEBAR -->				
-					<div class="row">
-						<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 section-title-thin">		
-							<h4>Paquetes y precios</h4>	
-							<h3>Seleccione el plan de precios que se adapte a sus necesidades. Actualizar, degradar o cancelar en cualquier momento</h3>														
-						</div>
-					</div>	
 
 				
-					<!-- PRICING TABLES HOLDER -->
-					<div class="row pricing-row">
-					
-					
-						<!-- PRICE PLAN STANDARD -->
-						<div class="col-sm-4 col-md-4 m-bottom-50">
-							<div class="pricing-table text-center">		
-								
-								<!-- Table Header  -->
-								<h3>Basico</h3>
 
-								<!-- Plan Price  -->
-								<div class="price">
-									<sup>$</sup>
-									<span>9.99</span>	
-									<p>por uso</p>
-								</div>
-																	
-								<!-- Plan Features  -->
-								<ul class="features">
-									<li>Up to10 Projects</li>
-									<li>10 GB of Storage</li>
-									<li>Up to 250 Users</li>
-									<li>10 mySQL Database</li>
-								</ul>
-										
-								<!-- Table Button  -->
-								<a href="#" class="btn btn-lg">Selececionar</a>
-
-							</div>
-						</div>
-						
-						
-						<!-- PRICE PLAN ADVANCED -->
-						<div class="col-sm-4 col-md-4 m-bottom-50">	
-							<div class="pricing-table text-center highlight">		
-								
-								<!-- Table Header  -->
-								<h3>Avansado</h3>
-								<div class="down-arrow"></div>
-
-								<!-- Plan Price  -->
-								<div class="price">
-									<sup>$</sup>
-									<span>69</span>	
-									<p>mensual</p>
-								</div>
-																	
-								<!-- Plan Features  -->
-								<ul class="features">
-									<li>Unlimited Projects</li>
-									<li>50 GB of Storage</li>
-									<li>Up to 1000 Users</li>
-									<li>10 mySQL Database</li>
-								</ul>
-										
-								<!-- Table Button  -->
-								<a href="#" class="btn btn-lg">SSelececionar</a>
-
-							</div>
-						</div>
-						
-						
-						<!-- PRICE PLAN ULTIMATE -->
-						<div class="col-sm-4 col-md-4 m-bottom-50">
-							<div class="pricing-table text-center">		
-								
-								<!-- Table Header  -->
-								<h3>Primiun</h3>
-
-								<!-- Plan Price  -->
-								<div class="price">
-									<sup>$</sup>
-									<span>499</span>	
-									<p>anual</p>
-								</div>
-																	
-								<!-- Plan Features  -->
-								<ul class="features">
-								    <li>Unlimited Projects</li>
-								    <li>150 GB of Storage</li>
-									<li>Unlimited Users</li>
-									<li>10 mySQL Database</li>
-								</ul>
-										
-								<!-- Table Button  -->
-								<a href="#" class="btn btn-lg">Selececionar</a>
-
-							</div>
-						</div>
-						
-						
-					</div>	 <!-- END PRICING TABLES HOLDER -->
-					
-					
-					<!-- PRICING NOTICE MESSAGE  -->
-					<div class="row pricing-notice">				 	
-						<div class="col-md-12 text-center m-bottom-50">	
-							<p>Para explorar <span>su mejor plan</span> o una cotización personalizada, contáctese con ventas en <span>(051)983 030 736</span> </p>							
-						</div>							
-					</div>
-
-					
-				</div>    <!-- End container -->		
-			</section>	<!-- END PRICING -->
-			
-        </div>
 
 			
 
