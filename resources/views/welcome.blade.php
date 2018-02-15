@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				
 		<!-- SITE TITLE -->
-		<title>Altron - Multi-Purpose Landing Page Template</title>
+		<title>ICEX</title>
 							
 		<!-- FAVICON AND TOUCH ICONS  -->
 		<link rel="shortcut icon" href="images/logo-ecex.png" type="image/x-icon">

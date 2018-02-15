@@ -1,165 +1,165 @@
-<!DOCTYPE html>
-<html class=" js no-touch" lang="en"><!--<![endif]--><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="author" content="DSAThemes">	
-		<meta name="description" content="Altron - Multi-Purpose Landing Page Template">
-		<meta name="keywords" content="Responsive, HTML5 template, DSAThemes, Multi-Purpose, One Page, Landing, Business, Creative, Corporate, Agency Template, Project">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				
-		<!-- SITE TITLE -->
-		<title>Altron - Multi-Purpose Landing Page Template</title>
-							
-		<!-- FAVICON AND TOUCH ICONS  -->
-		<link rel="shortcut icon" href="images/logo-ecex.png" type="image/x-icon">
-		<link rel="icon" href="images/logo-ecex.png" type="image/x-icon">
-		<link rel="apple-touch-icon" sizes="144x144" href="images/logo-ecex.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="images/logo-ecex.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="images/logo-ecex.png">
-		<link rel="apple-touch-icon" href="images/logo-ecex.png">
-				
-		<!-- BOOTSTRAP CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet">
-				
-		<!-- FONT ICONS -->
-		<link href="css/font-awesome.css" rel="stylesheet">	
-		<link href="css/themify-icons.css" rel="stylesheet">
-				
-		<!-- GOOGLE FONTS -->
-		<link href="css/css.css" rel="stylesheet" type="text/css">
-				
-		<!-- PLUGINS STYLESHEET -->
-		<link href="css/owl.css" rel="stylesheet">
-		<link href="css/flexslider.css" rel="stylesheet">
-		<link href="css/prettyPhoto.css" rel="stylesheet">
-		
-		<!-- ON SCROLL ANIMATION -->
-		<link href="css/animate.css" rel="stylesheet">
-				
-		<!-- TEMPLATE CSS -->
-		<link href="css/base.css" rel="stylesheet"> 	
-		<link href="css/style.css" rel="stylesheet"> 	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="css/main-moca.css" rel="stylesheet"> 
 
-		<!-- RESPONSIVE CSS -->
-		<link href="css/responsive.css" rel="stylesheet"> 
-
-			
-	</head>
-
-
-	<body>
-	
-	
-	
-		<!-- PRELOADER
-		============================================= -->		
-		<div class="animationload" style="display: none;">
-			<div class="loader" style="display: none;"></div>
-		</div>
-		
-		
-		
-		<!-- PAGE CONTENT
-		============================================= -->	
-		<div id="page" class="page-wrapper">
-		
-		
-		
-			<!-- HEADER 
-			============================================= -->
-			<header id="header" class="no-bg header">		
-				<div class="navbar navbar-fixed-top">	
-					<div class="container">
-					
-						
-						<!-- Navigation Bar -->
-						<div class="navbar-header">
-						
-							<!-- Responsive Menu Button -->
-							<button type="button" id="nav-toggle" class="navbar-toggle text-right" data-toggle="collapse" data-target="#navigation-menu">
-								<span class="sr-only">Toggle navigation</span> 
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							
-							<!-- LOGO IMAGE -->
-							<!-- Recommended sizes 150x22px; -->
-							<a class="navbar-brand logo-white" href="#intro-7"><img src="images/logo-icex.png" alt="logo" style="height: 30px;"></a>
-							<a class="navbar-brand logo-black" href="#intro-7"><img src="images/logo-icex.png" alt="logo" style="height: 30px;"></a>
-							
-						</div>	<!-- End Navigation Bar -->
-						
-						
-						<!-- Navigation Menu -->
-						<nav id="navigation-menu" class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-right editContent">													
-								
-								<li><a href="/">Inicio</a></li>															
-								<li><a href="/inteligencia">Inteligencia comercial</a></li>
-								<li><a href="/analisis">Analisis de mercado</a></li>	
-								<li><a href="/./#pricing">Planes y productos</a></li>	
-							</ul>
-						</nav>  <!-- End Navigation Menu -->
-						
-						
-					</div>	  <!-- End container -->
-				</div>	   <!-- End navbar fixed top  -->
-			</header>	<!-- END HEADER -->	
-			
-			
-			
-			<!-- INTRO-7
-			============================================= -->
-			<section id="intro-7" class="intro-section">
-				<div class="overlay division">
-					<div class="container">		
-						<div id="intro-7-content" class="row">
-							<!-- INTRO TEXT -->
-							<div class="col-md-10 col-md-offset-1 intro-txt text-center white-color">
-								
-								<!-- Title -->
-								<h2>La herramienta para venta y exportacion que estabas esperando</h2>	
-
-								<!-- Button -->
-								<a class="btn btn-lg btn-tra m-top-5" href="#">Pruevalo Gratis</a>		
+    <title>acex|analisis de mercado</title>
+  </head>
+  <body>
+	  <!--SECTION OF NAVBAR-->
+		<section class="container-fluid bg-white sombra-moca">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-white">
+						<a class="navbar-brand" href="#">
+							<img src="images/logo-icex.png" height="30" class="d-inline-block align-top" alt="">
+						</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+						<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link p-2 text-nav-moca" href="/">INICIO</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link p-2 text-nav-moca" href="/inteligencia">INTELIGENCIA COMERCIAL</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link p-2 text-nav-moca" href="/analisis">ANALISIS DE MERCADO</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link p-2 text-nav-moca" href="/./#pricing">PLANES Y PRODUCTOS</a>
+						</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</section><!--END SECTION OF NAVBAR-->
+		<!---->
+		<!--SECTION OF CONTENIDO-->
+		<section class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<!--primer modulo-->
+					<div class="col pt-5">
+						<div class="card mt-2">
+							<div class="card-body bg-light">
+								<div id="vmap" style="width: 100%; height: 400px;"></div>
 							</div>
-						</div>	 <!-- End Intro Content -->
-					</div>    <!-- End container -->
-				</div>	   <!-- End overlay -->
-			</section>	<!-- END INTRO-7 -->
-		
-		
-		
-
-				
-
-
-			
-
+							<section class="row pl-4 pb-2">
+								<div class="col d-flex"><span class="text-danger mr-2">Pais Critico</span><span class="text-warning mr-2">Pais preventivo</span><span class="text-success mr-2">Pais Moderado</span></div>
+							</section>
+						</div>
+						<div class="card mt-3">
+							<div class="card-header">
+								Riesgo Pais
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col">
+										<div class="card mt-2 bg-light">
+											<div class="card-body">
+												<div>
+													<p><span class="font-weight-bold">Peru</span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card mt-2 bg-light">
+											<div class="card-body">
+												<div>
+													<p><span class="font-weight-bold">Peru</span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card mt-2 bg-light">
+											<div class="card-body">
+												<div>
+													<p><span class="font-weight-bold">Peru</span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--segundo modulo-->
+					<div class="col-4 pt-5">
+						<div class="card mt-2 bg-light" style="width: 18rem;">
+							<div class="card-header">
+								Top de exportacion
+							</div>
+							<div class="card-body">
+								<div>
+									<p><span class="font-weight-bold">Peru</span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
+								</div>
+								<div>
+									<p><span class="font-weight-bold">Brasil</span><span class="font-weight-light"><br>Exportacion : 65%<br>Inportacion : 35%</p></span>
+								</div>
+								<div>
+									<p><span class="font-weight-bold">Ecuador</span><span class="font-weight-light"><br>Exportacion : 36%<br>Inportacion : 64%</p></span>
+								</div>
+								<div>
+									<p><span class="font-weight-bold">Chile</span><span class="font-weight-light"><br>Exportacion : 25%<br>Inportacion : 75%</p></span>
+								</div>
+							</div>
+						</div>
+						<div class="card mt-4" style="width: 18rem;">
+							<div class="card-header">
+								Paises en crisis
+							</div>
+							<div class="card-body">
+								<div>
+									<p><span class="font-weight-bold">Venezuela</span><span class="font-weight-light"><br>Problema : Politico</p></span>
+								</div>
+								<div>
+									<p><span class="font-weight-bold">Argentina</span><span class="font-weight-light"><br>Problema : Deuda</p></span>
+								</div>
+								<div>
+									<p><span class="font-weight-bold">México</span><span class="font-weight-light"><br>Problema : Deuda</p></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	
-		<!-- EXTERNAL SCRIPTS
-		============================================= -->	
-		<script src="js/jquery-2.js" type="text/javascript"></script>
-		<script src="js/bootstrap.js" type="text/javascript"></script>	
-		<script src="js/modernizr.js" type="text/javascript"></script>
-		<script src="js/jquery_009.js" type="text/javascript"></script>
-		<script src="js/retina.js" type="text/javascript"></script>	
-		<script src="js/jquery_005.js" type="text/javascript"></script>	
-		<script src="js/jquery.js"></script>
-		<script defer="defer" src="js/jquery_007.js"></script>
-		<script defer="defer" src="js/jquery_006.js"></script>		
-		<script src="js/owl.js" type="text/javascript"></script>
-		<script src="js/jquery_002.js" type="text/javascript"></script>
-		<script defer="defer" src="js/jquery_008.js" type="text/javascript"></script>
-		<script src="js/waypoints.js" type="text/javascript"></script>	
-		<script src="js/jquery_004.js"></script>
-		<script src="js/contact_form.js" type="text/javascript"></script>	
-		<script defer="defer" src="js/jquery_003.js" type="text/javascript"></script>
-		
-		<!-- Custom Script -->		
-		<script src="js/custom.js" type="text/javascript"></script>	
-        </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery.vmap.sampledata.js"></script>
+	<script type="text/javascript" src="js/jquery.vmap.js"></script>
+	<script type="text/javascript" src="js/maps/jquery.vmap.world.js" charset="utf-8"></script>
+
+    <script>
+			jQuery(document).ready(function () {
+			  jQuery('#vmap').vectorMap({
+				map: 'world_en',
+				backgroundColor: '#273c75',
+				color: '#ffffff',
+				hoverOpacity: 0.7,
+				selectedColor: '#666666',
+				enableZoom: true,
+				showTooltip: true,
+				scaleColors: ['#C8EEFF', '#006491'],
+				values: sample_data,
+				normalizeFunction: 'polynomial'
+			  });
+			});
+		  </script>
+  </body>
 </html>

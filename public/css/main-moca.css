@@ -1,0 +1,15 @@
+
+.text-blue-moca{
+    color: #23527c !important;
+}
+.text-nav-moca{
+    font-weight: 900;
+    font-size: 13px; 
+}
+.sombra-moca{
+    box-shadow: 1px 3px 6px 0px rgba(0,0,0,0.33) !important;
+
+}
+.row-moca{
+    display: flex;
+}
