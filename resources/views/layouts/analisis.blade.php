@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="css/main-moca.css" rel="stylesheet"> 
 
-    <title>acex|analisis de mercado</title>
+	<title>acex|analisis de mercado</title>
+  
   </head>
   <body>
 	  <!--SECTION OF NAVBAR-->
@@ -56,39 +58,24 @@
 								<div class="col d-flex"><span class="text-danger mr-2">Pais Critico</span><span class="text-warning mr-2">Pais preventivo</span><span class="text-success mr-2">Pais Moderado</span></div>
 							</section>
 						</div>
+						<!--el mapa-->
+						<div id="mapa" class="card mt-3">
+								<div class="card-body">
+									<div class="row">
+										<div class="col">
+											<div id="chart_div"></div>
+										</div>
+									</div>
+								</div>
+						</div>
+						<!--el resutado-->
 						<div class="card mt-3">
 							<div class="card-header">
 								Riesgo Pais
 							</div>
 							<div class="card-body">
-								<div class="row">
-									<div class="col">
-										<div class="card mt-2 bg-light">
-											<div class="card-body">
-												<div>
-													<p><span class="font-weight-bold">Peru</span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col">
-										<div class="card mt-2 bg-light">
-											<div class="card-body">
-												<div>
-													<p><span class="font-weight-bold">Peru</span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col">
-										<div class="card mt-2 bg-light">
-											<div class="card-body">
-												<div>
-													<p><span class="font-weight-bold">Peru</span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="row" id="paises">
+									
 								</div>
 							</div>
 						</div>
@@ -161,5 +148,7 @@
 			  });
 			});
 		  </script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="js/main-moca.js"></script>
   </body>
 </html>

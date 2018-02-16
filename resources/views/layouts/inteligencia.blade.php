@@ -25,13 +25,13 @@
 					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
 						<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="#">INICIO</a>
+							<a class="nav-link p-2 text-nav-moca" href="/">INICIO</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link p-2 text-nav-moca" href="#">INTELIGENCIA COMERCIAL</a>
+							<a class="nav-link p-2 text-nav-moca" href="/inteligencia">INTELIGENCIA COMERCIAL</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="#">ANALISIS DE MERCADO</a>
+							<a class="nav-link p-2 text-nav-moca" href="/analisis">ANALISIS DE MERCADO</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link p-2 text-nav-moca" href="/./#pricing">PLANES Y PRODUCTOS</a>
@@ -42,6 +42,88 @@
 			</div>
 		</section><!--END SECTION OF NAVBAR-->
 		<!---->
+		<!--SECTION OF CONTENIDO-->
+		<section class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<!--primer modulo-->
+						<div class="col pt-5">
+							<div class="card mt-2">
+								<div class="card-body bg-light">
+										<form>
+												<ul class="d-flex">
+														<div class="form-check mr-3">
+																<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+																<label class="form-check-label" for="exampleRadios1">
+																	Exportacion
+																</label>
+															</div>
+															<div class="form-check">
+																<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+																<label class="form-check-label" for="exampleRadios2">
+																	Inportacion
+																</label>
+															</div>
+												</ul>
+												<div class="form-group">
+													<label for="exampleInputEmail1">Nombre Comercial</label>
+													<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre o codigo del producto">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputPassword1">Partida arancelaria</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Partida arancelaria">
+												</div>
+												<div class="form-group">
+														<label for="exampleInputPassword1">Exportador</label>
+														<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del exportador">
+												</div>
+												<div class="form-group">
+														<label for="exampleInputPassword1">Inportador</label>
+														<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del importador">
+												</div>
+												<div class="row">
+														<div class="col">
+																<div class="form-group">
+																		<label for="exampleInputPassword1">Inicio</label>
+																		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fecha de inicio">
+																</div>
+														</div>
+														<div class="col">
+																<div class="form-group">
+																		<label for="exampleInputPassword1">Final</label>
+																		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fecha final">
+																</div>
+														</div>
+												</div>
+												<button type="submit" class="btn btn-primary">Bucar</button>
+										</form>
+								</div>
+							</div>
+						</div>
+						
+						<!--segundo modulo-->
+						<div class="col-4 pt-5">
+							<div class="card mt-2 bg-light" style="width: 18rem;">
+								<div class="card-header">
+									Top Productos
+								</div>
+								<div class="card-body">
+									<div>
+										<p><span class="font-weight-bold">Papas o aguacates</span><span class="font-weight-light"><br>Peru</p></span>
+									</div>
+									<div>
+										<p><span class="font-weight-bold">Cacao</span><span class="font-weight-light"><br>Brasil</p></span>
+									</div>
+									<div>
+										<p><span class="font-weight-bold">Cebollas y chalotes</span><span class="font-weight-light"><br>Peru</p></span>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		
     <!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
