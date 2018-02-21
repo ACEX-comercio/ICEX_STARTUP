@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="css/main-moca.css" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <title>acex|analisis de mercado</title>
   </head>
@@ -49,53 +51,57 @@
 						<!--primer modulo-->
 						<div class="col pt-5">
 							<div class="card mt-2">
+							<div class="card-header fondomoca-asul">
+									<i class="material-icons">find_replace</i>
+									Busqueda personalizada
+								</div>
 								<div class="card-body bg-light">
 										<form>
-												<ul class="d-flex">
-														<div class="form-check mr-3">
-																<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-																<label class="form-check-label" for="exampleRadios1">
-																	Exportacion
-																</label>
-															</div>
-															<div class="form-check">
-																<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-																<label class="form-check-label" for="exampleRadios2">
-																	Inportacion
-																</label>
-															</div>
-												</ul>
-												<div class="form-group">
-													<label for="exampleInputEmail1">Nombre Comercial</label>
-													<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre o codigo del producto">
-												</div>
-												<div class="form-group">
-													<label for="exampleInputPassword1">Partida arancelaria</label>
-													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Partida arancelaria">
-												</div>
-												<div class="form-group">
-														<label for="exampleInputPassword1">Exportador</label>
-														<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del exportador">
-												</div>
-												<div class="form-group">
-														<label for="exampleInputPassword1">Inportador</label>
-														<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del importador">
-												</div>
-												<div class="row">
-														<div class="col">
-																<div class="form-group">
-																		<label for="exampleInputPassword1">Inicio</label>
-																		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fecha de inicio">
-																</div>
+											<ul class="d-flex">
+													<div class="form-check mr-3">
+															<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+															<label class="form-check-label" for="exampleRadios1">
+																Exportacion
+															</label>
 														</div>
-														<div class="col">
-																<div class="form-group">
-																		<label for="exampleInputPassword1">Final</label>
-																		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fecha final">
-																</div>
+														<div class="form-check">
+															<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+															<label class="form-check-label" for="exampleRadios2">
+																Inportacion
+															</label>
+														</div>
+											</ul>
+											<div class="form-group">
+												<label for="exampleInputEmail1">Nombre Comercial</label>
+												<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre o codigo del producto">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Partida arancelaria</label>
+												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Partida arancelaria">
+											</div>
+											<div class="form-group">
+													<label for="exampleInputPassword1">Exportador</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del exportador">
+											</div>
+											<div class="form-group">
+													<label for="exampleInputPassword1">Inportador</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del importador">
+											</div>
+											<div class="row">
+												<div class="col">
+														<div class="form-group">
+																<label for="exampleInputPassword1">Inicio</label>
+																<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fecha de inicio">
 														</div>
 												</div>
-												<button type="submit" class="btn btn-primary">Bucar</button>
+												<div class="col">
+														<div class="form-group">
+																<label for="exampleInputPassword1">Final</label>
+																<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fecha final">
+														</div>
+												</div>
+											</div>
+											<a href="/muestra" type="button" class="btn btn-primary">Bucar</a>
 										</form>
 								</div>
 							</div>
@@ -104,20 +110,21 @@
 						<!--segundo modulo-->
 						<div class="col-4 pt-5">
 							<div class="card mt-2 bg-light" style="width: 18rem;">
-								<div class="card-header">
-									Top Productos
+								<div class="card-header fondomoca-asul">
+									<i class="material-icons">swap_vert</i>
+										Top productos
 								</div>
 								<div class="card-body">
+									<p><small class="text-muted">Productos mas comercialisados</small></p>
 									<div>
-										<p><span class="font-weight-bold">Papas o aguacates</span><span class="font-weight-light"><br>Peru</p></span>
+										<p><span class="font-weight-bold"><span class="colormoca-asul">Papas o aguacates</span></span><span class="font-weight-light"><br>Peru</p></span>
 									</div>
 									<div>
-										<p><span class="font-weight-bold">Cacao</span><span class="font-weight-light"><br>Brasil</p></span>
+										<p><span class="font-weight-bold"><span class="colormoca-asul">Cacao</span></span><span class="font-weight-light"><br>Brasil</p></span>
 									</div>
 									<div>
-										<p><span class="font-weight-bold">Cebollas y chalotes</span><span class="font-weight-light"><br>Peru</p></span>
+										<p><span class="font-weight-bold"><span class="colormoca-asul">Cebollas y chalotes</span></span><span class="font-weight-light"><br>Peru</p></span>
 									</div>
-									
 								</div>
 							</div>
 						</div>

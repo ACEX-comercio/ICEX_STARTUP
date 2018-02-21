@@ -13,3 +13,10 @@
 .row-moca{
     display: flex;
 }
+.fondomoca-asul{
+    background: #2980b9;
+    color: #fff;
+}
+.colormoca-asul{
+    color: #2980b9;
+}

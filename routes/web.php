@@ -14,9 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/inteligencia', function () {
     return view('layouts.inteligencia');
 });
+Route::get('/muestra', 'PruevaController@mostrar');
+/*Route::get('/muestra', function () {
+    return view('layouts.analisispost');
+});*/
+
 Route::get('/analisis', function () {
     return view('layouts.analisis');
 });

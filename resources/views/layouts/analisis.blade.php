@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="css/main-moca.css" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 	<title>acex|analisis de mercado</title>
   
@@ -51,29 +53,57 @@
 					<!--primer modulo-->
 					<div class="col pt-5">
 						<div class="card mt-2">
+							<div class="card-header fondomoca-asul">
+								<i class="material-icons">room</i>
+								Mapa de calor
+							</div>
 							<div class="card-body bg-light">
+								<p><small class="text-muted">Mapa de calor de inverciones de cada pais</small></p>
+								<section class="row pb-2">
+									<div class="col-4">
+										<div class="card-header bg-danger text-white d-flex align-items-center">
+											<i class="material-icons">call_received</i>
+											Pais critico
+										</div>
+									</div>
+									<div class="col-4 ">
+										<div class="card-header bg-warning text-white d-flex align-items-center">
+											<i class="material-icons">call_missed_outgoing</i>
+											Pais preventivo
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="card-header bg-success text-white d-flex align-items-center">
+											<i class="material-icons">call_made</i>
+											pais moderado
+										</div>
+									</div>
+								</section>
 								<div id="vmap" style="width: 100%; height: 400px;"></div>
 							</div>
-							<section class="row pl-4 pb-2">
-								<div class="col d-flex"><span class="text-danger mr-2">Pais Critico</span><span class="text-warning mr-2">Pais preventivo</span><span class="text-success mr-2">Pais Moderado</span></div>
-							</section>
 						</div>
 						<!--el mapa-->
 						<div id="mapa" class="card mt-3">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<div id="chart_div"></div>
-										</div>
+							<div class="card-header fondomoca-asul">
+								<i class="material-icons">timeline</i>
+								Grafico de paises
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col">
+										<div id="chart_div"></div>
 									</div>
 								</div>
+							</div>
 						</div>
 						<!--el resutado-->
 						<div class="card mt-3">
-							<div class="card-header">
+							<div class="card-header fondomoca-asul">
+								<i class="material-icons">language</i>
 								Riesgo Pais
 							</div>
 							<div class="card-body">
+								<p><small class="text-muted">Selecione el pais que desea informacion  y le graficara los resultados</small></p>
 								<div class="row" id="paises">
 									
 								</div>
@@ -84,37 +114,41 @@
 					<!--segundo modulo-->
 					<div class="col-4 pt-5">
 						<div class="card mt-2 bg-light" style="width: 18rem;">
-							<div class="card-header">
+							<div class="card-header fondomoca-asul">
+							<i class="material-icons">swap_vert</i>
 								Top de exportacion
 							</div>
 							<div class="card-body">
+								<p><small class="text-muted">los 4 paises que mas exporacioes an realisado en un mes</small></p>
 								<div>
-									<p><span class="font-weight-bold">Peru</span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Peru</span></span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
 								</div>
 								<div>
-									<p><span class="font-weight-bold">Brasil</span><span class="font-weight-light"><br>Exportacion : 65%<br>Inportacion : 35%</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Brasil</span></span><span class="font-weight-light"><br>Exportacion : 65%<br>Inportacion : 35%</p></span>
 								</div>
 								<div>
-									<p><span class="font-weight-bold">Ecuador</span><span class="font-weight-light"><br>Exportacion : 36%<br>Inportacion : 64%</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Ecuador</span></span><span class="font-weight-light"><br>Exportacion : 36%<br>Inportacion : 64%</p></span>
 								</div>
 								<div>
-									<p><span class="font-weight-bold">Chile</span><span class="font-weight-light"><br>Exportacion : 25%<br>Inportacion : 75%</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Chile</span></span><span class="font-weight-light"><br>Exportacion : 25%<br>Inportacion : 75%</p></span>
 								</div>
 							</div>
 						</div>
 						<div class="card mt-4" style="width: 18rem;">
-							<div class="card-header">
+							<div class="card-header fondomoca-asul">
+								<i class="material-icons">swap_vert</i>
 								Paises en crisis
 							</div>
 							<div class="card-body">
+								<p><small class="text-muted">Los 3 paises que se encuentra en crisis</small></p>
 								<div>
-									<p><span class="font-weight-bold">Venezuela</span><span class="font-weight-light"><br>Problema : Politico</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Venezuela</span></span><span class="font-weight-light"><br>Problema : Politico</p></span>
 								</div>
 								<div>
-									<p><span class="font-weight-bold">Argentina</span><span class="font-weight-light"><br>Problema : Deuda</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Argentina</span></span><span class="font-weight-light"><br>Problema : Deuda</p></span>
 								</div>
 								<div>
-									<p><span class="font-weight-bold">México</span><span class="font-weight-light"><br>Problema : Deuda</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">México</span></span><span class="font-weight-light"><br>Problema : Deuda</p></span>
 								</div>
 							</div>
 						</div>
@@ -136,15 +170,15 @@
 			jQuery(document).ready(function () {
 			  jQuery('#vmap').vectorMap({
 				map: 'world_en',
-				backgroundColor: '#273c75',
+				backgroundColor: '#34495e',
 				color: '#ffffff',
 				hoverOpacity: 0.7,
 				selectedColor: '#666666',
 				enableZoom: true,
 				showTooltip: true,
-				scaleColors: ['#C8EEFF', '#006491'],
+				scaleColors: ['#f1c40f','#27ae60', '#e74c3c'],
 				values: sample_data,
-				normalizeFunction: 'polynomial'
+				normalizeFunction: 'polynomial',
 			  });
 			});
 		  </script>

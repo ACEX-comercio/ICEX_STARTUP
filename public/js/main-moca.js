@@ -1,7 +1,7 @@
 
 google.charts.load('current', {'packages':['corechart']});
 function getRandom() {
-    return Math.random() * (4 - 0) + 0
+    return Math.random() * (100 - 0) + 0;
   }
 
 function dibujo(pais){
@@ -18,19 +18,20 @@ function dibujo(pais){
         // Create the data table.
         console.log(pais);
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
+        data.addColumn('string', 'rramas');
+        data.addColumn('number', 'Porcentajes');
         data.addRows([
             ['Social', getRandom()],
             ['politico', getRandom()],
             ['Economico', getRandom()],
-            ['Natural', 1],
+            ['Natural', Math.random() * (60 - 0) + 0],
             ['Otros', getRandom()]
         ]);
 
         // Set chart options
         var options = {'title':pais,
                         'width':'100%',
+                        'legend': {position: 'top', maxLines: 3},
                         'height':300};
 
         // Instantiate and draw our chart, passing in some options.
