@@ -56,7 +56,7 @@
 									Busqueda personalizada
 								</div>
 								<div class="card-body bg-light">
-										<form>
+										<form action="/buscar" method="get">
 											<ul class="d-flex">
 													<div class="form-check mr-3">
 														<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -73,8 +73,8 @@
 											</ul>
 											<div class="form-group">
 												<label class="mr-sm-2" for="inlineFormCustomSelect">Pais</label>
-												<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-													<option selected>Todos</option>
+												<select name="pais" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+													<option  selected>Todos</option>
 													<option value="AF">Afganistán</option>
 														<option value="AL">Albania</option>
 														<option value="DE">Alemania</option>
@@ -325,26 +325,26 @@
 											</div>
 											<div class="form-group">
 												<label for="exampleInputEmail1">Nombre Comercial</label>
-												<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre o codigo del producto">
+												<input type="text" name="nbcomercial" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre o codigo del producto">
 											</div>
 											<div class="form-group">
 												<label for="exampleInputPassword1">Partida arancelaria</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Partida arancelaria">
+												<input type="text" name="ptarancelaria" class="form-control" id="exampleInputPassword1" placeholder="Partida arancelaria">
 											</div>
 											<div class="form-group">
 													<label for="exampleInputPassword1">Exportador</label>
-													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del exportador">
+													<input type="text" name="nbexportador" class="form-control" id="exampleInputPassword1" placeholder="Nombre del exportador">
 											</div>
 											<div class="form-group">
 													<label for="exampleInputPassword1">Inportador</label>
-													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del importador">
+													<input type="text" name="nbinportador" class="form-control" id="exampleInputPassword1" placeholder="Nombre del importador">
 											</div>
 											<div class="row">
 												<div class="col">
-														<div class="form-group">
-																<label for="exampleInputPassword1">Inicio</label>
-																<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fecha de inicio">
-														</div>
+													<div class="form-group">
+														<label for="exampleInputPassword1">Inicio</label>
+														<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fecha de inicio">
+													</div>
 												</div>
 												<div class="col">
 														<div class="form-group">
@@ -353,7 +353,8 @@
 														</div>
 												</div>
 											</div>
-											<a href="/muestra" type="button" class="btn btn-primary">Bucar</a>
+											<!--<a href="/muestra" type="button" class="btn btn-primary">Bucar</a>-->
+											<button type="submit" class="btn btn-primary">Buscar</button>
 										</form>
 								</div>
 							</div>

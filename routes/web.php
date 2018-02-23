@@ -26,6 +26,7 @@ Route::get('/muestra', 'PruevaController@mostrar');
 Route::get('/analisis', function () {
     return view('layouts.analisis');
 });
+Route::get('/buscar','BusquedaController@buscar');
 
 Auth::routes();
 
