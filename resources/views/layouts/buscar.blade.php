@@ -81,7 +81,7 @@
                                                     <td>{{$informacion->peso_original}}</td>
                                                     <td>{{$informacion->bultos_original}}</td>
                                                     <td>{{$informacion->importador}}</td>
-                                                    <td>{{$informacion->exportador}}</td>
+                                                    <td><a href="https://www.google.com/search?client=windows&channel=fs&ei=mZyUWqrVBYOG5wL34Y3ABg&q={{$informacion->exportador}}&oq={{$informacion->exportador}}&gs_l=psy-ab.3..0i71k1l5.0.0.0.2654.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.0_CAw8j_O_0">{{$informacion->exportador}}</a></td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
