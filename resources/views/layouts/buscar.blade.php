@@ -10,7 +10,6 @@
 	<link href="css/main-moca.css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-
     <title>acex|analisis de mercado</title>
   </head>
   <body>
@@ -18,7 +17,7 @@
 		<section class="container-fluid bg-white sombra-moca">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light bg-white">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="/">
 							<img src="images/logo-icex.png" height="30" class="d-inline-block align-top" alt="">
 						</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,8 +79,8 @@
                                                     <td>{{$informacion->partida_arancelaria}}</td>
                                                     <td>{{$informacion->peso_original}}</td>
                                                     <td>{{$informacion->bultos_original}}</td>
-                                                    <td>{{$informacion->importador}}</td>
-                                                    <td><a href="https://www.google.com/search?client=windows&channel=fs&ei=mZyUWqrVBYOG5wL34Y3ABg&q={{$informacion->exportador}}&oq={{$informacion->exportador}}&gs_l=psy-ab.3..0i71k1l5.0.0.0.2654.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.0_CAw8j_O_0">{{$informacion->exportador}}</a></td>
+                                                    <td><a href="https://www.google.com/search?client=windows&channel=fs&ei=mZyUWqrVBYOG5wL34Y3ABg&q={{$informacion->importador}}&oq={{$informacion->importador}}&gs_l=psy-ab.3..0i71k1l5.0.0.0.2654.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.0_CAw8j_O_0" target="_blank">{{$informacion->importador}}</a></td>
+                                                    <td>{{$informacion->exportador}}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -102,6 +101,7 @@
 	<script type="text/javascript" src="js/jquery.vmap.sampledata.js"></script>
 	<script type="text/javascript" src="js/jquery.vmap.js"></script>
 	<script type="text/javascript" src="js/maps/jquery.vmap.world.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/main-moca.js" charset="utf-8"></script>
 
     <script>
 			jQuery(document).ready(function () {

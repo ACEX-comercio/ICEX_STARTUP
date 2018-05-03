@@ -20,7 +20,7 @@
 		<section class="container-fluid bg-white sombra-moca">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light bg-white">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="/">
 							<img src="images/logo-icex.png" height="30" class="d-inline-block align-top" alt="">
 						</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
 								Mapa de calor
 							</div>
 							<div class="card-body bg-light">
-								<p><small class="text-muted">Mapa de calor de inverciones de cada pais</small></p>
+								<p><small class="text-muted">Mapa de calor de inversiones de cada pais</small></p>
 								<section class="row pb-2">
 									<div class="col-4">
 										<div class="card-header bg-danger text-white d-flex align-items-center">
@@ -119,18 +119,18 @@
 								Top de exportacion
 							</div>
 							<div class="card-body">
-								<p><small class="text-muted">los 4 paises que mas exporacioes an realisado en un mes</small></p>
+								<p><small class="text-muted">los 4 paises que mas exportaron en el ultimo mes</small></p>
 								<div>
-									<p><span class="font-weight-bold"><span class="colormoca-asul">Peru</span></span><span class="font-weight-light"><br>Exportacion : 70%<br>Inportacion : 30%</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Chile</span></span><span class="font-weight-light"><br>Exportacion : 70%<br>Importacion : 30%</p></span>
 								</div>
 								<div>
-									<p><span class="font-weight-bold"><span class="colormoca-asul">Brasil</span></span><span class="font-weight-light"><br>Exportacion : 65%<br>Inportacion : 35%</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Brasil</span></span><span class="font-weight-light"><br>Exportacion : 65%<br>Importacion : 35%</p></span>
 								</div>
 								<div>
-									<p><span class="font-weight-bold"><span class="colormoca-asul">Ecuador</span></span><span class="font-weight-light"><br>Exportacion : 36%<br>Inportacion : 64%</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Ecuador</span></span><span class="font-weight-light"><br>Exportacion : 36%<br>Importacion : 64%</p></span>
 								</div>
 								<div>
-									<p><span class="font-weight-bold"><span class="colormoca-asul">Chile</span></span><span class="font-weight-light"><br>Exportacion : 25%<br>Inportacion : 75%</p></span>
+									<p><span class="font-weight-bold"><span class="colormoca-asul">Peru</span></span><span class="font-weight-light"><br>Exportacion : 25%<br>Importacion : 75%</p></span>
 								</div>
 							</div>
 						</div>
@@ -173,12 +173,17 @@
 				backgroundColor: '#34495e',
 				color: '#ffffff',
 				hoverOpacity: 0.7,
-				selectedColor: '#666666',
-				enableZoom: true,
-				showTooltip: true,
-				scaleColors: ['#f1c40f','#27ae60', '#e74c3c'],
+				selectedColor: '#e74c3c',
+				scaleColors: ['#f1c40f','#27ae60'],
 				values: sample_data,
+				enableZoom: true,
+          		showTooltip: true,
 				normalizeFunction: 'polynomial',
+    			showTooltip: true,
+				multiSelectRegion: true,
+          		selectedRegions: ['PK','VE','SD','AO','YE'],
+				
+				  //paises de 
 			  });
 			});
 		  </script>

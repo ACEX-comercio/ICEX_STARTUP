@@ -18,7 +18,7 @@
 		<section class="container-fluid bg-white sombra-moca">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light bg-white">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="/">
 							<img src="images/logo-icex.png" height="30" class="d-inline-block align-top" alt="">
 						</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,7 @@
 													<div class="form-check">
 														<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
 														<label class="form-check-label" for="exampleRadios2" disabled="">
-															Inportacion
+															Importacion
 														</label>
 													</div>
 											</ul>

@@ -70,5 +70,24 @@ for(i=0;i<paisesdelmundo.length;i++){
     if(i+1==paisesdelmundo.length){
         dibujo(paisesdelmundo[i-70]);
     }
-}   
+}
+/*function consumir() {
+    $(document).ready(function() {
+        $.ajax({
+            url: "http://rest-service.guides.spring.io/greeting"
+        }).then(function(data) {
+           console.log(data.id);
+           console.log(data.content);
+        });
+    });
+    /*console.log("entrada uno");
+    $.ajax({
+        url: "https://openlinkgoogle.herokuapp.com/mocainfconpany?empresa=google";
+    }).then(function(data) {
+        console.log(" enetrado dos");
+       console.log(data.url);       //$('.greeting-content').append(data.content);
+    });
+    console.log("e salido tres");
+    //location.href="http://www.fento.com.mx";
+}*/   
 

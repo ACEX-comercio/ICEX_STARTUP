@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				
 		<!-- SITE TITLE -->
-		<title>ICEX</title>
+		<title>ALANDINA</title>
 							
 		<!-- FAVICON AND TOUCH ICONS  -->
 		<link rel="shortcut icon" href="images/logo-ecex.png" type="image/x-icon">
@@ -92,8 +92,8 @@
 							
 							<!-- LOGO IMAGE -->
 							<!-- Recommended sizes 150x22px; -->
-							<a class="navbar-brand logo-white" href="#intro-7"><img src="images/logo-icex.png" alt="logo" style="height: 30px;"></a>
-							<a class="navbar-brand logo-black" href="#intro-7"><img src="images/logo-icex.png" alt="logo" style="height: 30px;"></a>
+							<a class="navbar-brand logo-white" href="/"><img src="images/logoacex-white.png" alt="logo" style="height: 60px;"></a>
+							<a class="navbar-brand logo-black" href="/"><img src="images/logo-icex.png" alt="logo" style="height: 40px;"></a>
 							
 						</div>	<!-- End Navigation Bar -->
 						
@@ -128,10 +128,10 @@
 							<div class="col-md-10 col-md-offset-1 intro-txt text-center white-color">
 								
 								<!-- Title -->
-								<h2>La herramienta para venta y exportacion que estabas esperando</h2>	
+								<h2>RASTREA Y ENCUENTRA POTENCIALES CLIENTES EN TODO EL MUNDO</h2>	
 
 								<!-- Button -->
-								<a class="btn btn-lg btn-tra m-top-10" href="#">Pruevalo Gratis</a>		
+								<a class="btn btn-lg btn-tra m-top-10" href="/inteligencia">Pruebalo Gratis</a>		
 									
 							</div>
 
@@ -165,7 +165,7 @@
 							<!-- Text -->
 							<div class="p-bottom-20">
 							
-								<p>Icex una plataforma que te permite ver a todos lo exportadores e inportadores de latinoamerica, gracias anuestro sistema de inteligencia comercial podras obtener datos presisos en la busqueda que usted desea
+								<p>Alandina una plataforma que te permite ver a todos lo exportadores e inportadores de latinoamerica, gracias anuestro sistema de inteligencia comercial podras obtener datos presisos en la busqueda que usted desea
 								</p>
 								
 							</div>
@@ -223,10 +223,9 @@
 																	
 								<!-- Plan Features  -->
 								<ul class="features">
-									<li>Up to10 Projects</li>
-									<li>10 GB of Storage</li>
-									<li>Up to 250 Users</li>
-									<li>10 mySQL Database</li>
+									<li>01 pais exportador</li>
+									<li>07 busquedas</li>
+									<li>01 categoria de mercado</li>
 								</ul>
 										
 								<!-- Table Button  -->
@@ -241,7 +240,7 @@
 							<div class="pricing-table text-center highlight">		
 								
 								<!-- Table Header  -->
-								<h3>Avansado</h3>
+								<h3>Intermedio</h3>
 								<div class="down-arrow"></div>
 
 								<!-- Plan Price  -->
@@ -253,10 +252,11 @@
 																	
 								<!-- Plan Features  -->
 								<ul class="features">
-									<li>Unlimited Projects</li>
-									<li>50 GB of Storage</li>
-									<li>Up to 1000 Users</li>
-									<li>10 mySQL Database</li>
+									<li>02 pais exportador</li>
+									<li>10 busquedas al dia</li>
+									<li>03 categorias de mercado</li>
+									<li>Asesoria y consultas</li>
+									<li>01 pais adicional</li>
 								</ul>
 										
 								<!-- Table Button  -->
@@ -271,7 +271,7 @@
 							<div class="pricing-table text-center">		
 								
 								<!-- Table Header  -->
-								<h3>Primiun</h3>
+								<h3>Premiun</h3>
 
 								<!-- Plan Price  -->
 								<div class="price">
@@ -282,10 +282,10 @@
 																	
 								<!-- Plan Features  -->
 								<ul class="features">
-								    <li>Unlimited Projects</li>
-								    <li>150 GB of Storage</li>
-									<li>Unlimited Users</li>
-									<li>10 mySQL Database</li>
+								    <li>20 Paises inpostadoras y exportadores</li>
+								    <li>15 Busquedas al dia</li>
+									<li>08 Categorias del mercado</li>
+									<li>Asesoria y consutas</li>
 								</ul>
 										
 								<!-- Table Button  -->
