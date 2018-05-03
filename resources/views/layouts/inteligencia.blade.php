@@ -26,18 +26,28 @@
 					</button>
 					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
 						<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/">INICIO</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link p-2 text-nav-moca" href="/inteligencia">INTELIGENCIA COMERCIAL</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/analisis">ANALISIS DE MERCADO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/./#pricing">PLANES Y PRODUCTOS</a>
-						</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="/">INICIO</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link p-2 text-nav-moca" href="/inteligencia">INTELIGENCIA COMERCIAL</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="/analisis">ANALISIS DE MERCADO</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="#" role="button" aria-expanded="false" aria-haspopup="true">
+									{{ Auth::user()->nombre }} <span class="caret"></span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca"  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+									SALIR
+								</a>
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+									{{ csrf_field() }}
+								</form>
+							</li>
 						</ul>
 					</div>
 				</nav>
@@ -75,12 +85,12 @@
 												<label class="mr-sm-2" for="inlineFormCustomSelect">Pais</label>
 												<select name="pais" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 													<option  selected>Todos</option>
-													<option value="AF">Afganistán</option>
-														<option value="AL">Albania</option>
-														<option value="DE">Alemania</option>
-														<option value="DZ">Algeria</option>
-														<option value="AD">Andorra</option>
-														<option value="AO">Angola</option>
+													<option name="pais" value="Afganistán">Afganistán</option>
+														<option value="Albania">Albania</option>
+														<option value="Alemania">Alemania</option>
+														<option value="Algeria">Algeria</option>
+														<option value="Andorra">Andorra</option>
+														<option value="Angola">Angola</option>
 														<option value="AI">Anguila</option>
 														<option value="AQ">Antártida</option>
 														<option value="AG">Antigua y Barbuda</option>
@@ -116,7 +126,7 @@
 														<option value="CA">Canadá</option>
 														<option value="TD">Chad</option>
 														<option value="CL">Chile</option>
-														<option value="CN">China</option>
+														<option value="china">China</option>
 														<option value="CY">Chipre</option>
 														<option value="VA">Ciudad del Vaticano</option>
 														<option value="CO">Colombia</option>
@@ -138,7 +148,7 @@
 														<option value="ER">Eritrea</option>
 														<option value="SK">Eslovaquia</option>
 														<option value="SI">Eslovenia</option>
-														<option value="ES">España</option>
+														<option value="España">España</option>
 														<option value="US">Estados Unidos de América</option>
 														<option value="EE">Estonia</option>
 														<option value="ET">Etiopía</option>
@@ -331,10 +341,7 @@
 												<label for="exampleInputPassword1">Partida arancelaria</label>
 												<input type="text" name="ptarancelaria" class="form-control" id="exampleInputPassword1" placeholder="Partida arancelaria">
 											</div>
-											<div class="form-group">
-													<label for="exampleInputPassword1">Exportador</label>
-													<input type="text" name="nbexportador" class="form-control" id="exampleInputPassword1" placeholder="Nombre del exportador">
-											</div>
+											
 											<div class="form-group">
 													<label for="exampleInputPassword1">Inportador</label>
 													<input type="text" name="nbinportador" class="form-control" id="exampleInputPassword1" placeholder="Nombre del importador">

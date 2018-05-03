@@ -25,18 +25,28 @@
 					</button>
 					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
 						<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/">INICIO</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link p-2 text-nav-moca" href="/inteligencia">INTELIGENCIA COMERCIAL</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/analisis">ANALISIS DE MERCADO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/./#pricing">PLANES Y PRODUCTOS</a>
-						</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="/">INICIO</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link p-2 text-nav-moca" href="/inteligencia">INTELIGENCIA COMERCIAL</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="/analisis">ANALISIS DE MERCADO</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="#" role="button" aria-expanded="false" aria-haspopup="true">
+									{{ Auth::user()->nombre }} <span class="caret"></span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca"  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+									SALIR
+								</a>
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+									{{ csrf_field() }}
+								</form>
+							</li>
 						</ul>
 					</div>
 				</nav>
@@ -46,11 +56,9 @@
 		<!--SECTION OF CONTENIDO-->
 		<section class="container-fluid">
 				<div class="container">
-					<div class="row">
-						
-					</div>
+					
                     <div class="row">
-                        <div class="col">
+                        <div>
                             <div class="card mt-2 bg-light">
 								<div class="card-header fondomoca-asul">
 									<i class="material-icons">swap_vert</i>
@@ -60,31 +68,34 @@
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Pais</th>
-                                                <th scope="col">Puerto</th>
-                                                <th scope="col">Descripcion</th>
-                                                <th scope="col">Partida Arancelaria</th>
-                                                <th scope="col">Peso Orig</th>
-                                                <th scope="col">Bulto Orig</th>
+                                                <th scope="col">partida</th>
+                                                <th scope="col">Aduana</th>
+                                                <th scope="col">Numero</th>
+                                                <th scope="col">fecha</th>
+                                                <th scope="col">Nombre comercial</th>
                                                 <th scope="col">Importador</th>
-                                                <th scope="col">Exportador</th>
+                                                <th scope="col">Pais</th>
+												<th scope="col">Puerto</th>
+												<th scope="col">Peso_neto</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @foreach ($informacions as $informacion)
                                                 <tr>
-                                                    <td>{{$informacion->nombre}}</td>
-                                                    <td>{{$informacion->puerto}}</td>
-                                                    <td>{{$informacion->descripcion_comercial}}</td>
-                                                    <td>{{$informacion->partida_arancelaria}}</td>
-                                                    <td>{{$informacion->peso_original}}</td>
-                                                    <td>{{$informacion->bultos_original}}</td>
-                                                    <td><a href="https://www.google.com/search?client=windows&channel=fs&ei=mZyUWqrVBYOG5wL34Y3ABg&q={{$informacion->importador}}&oq={{$informacion->importador}}&gs_l=psy-ab.3..0i71k1l5.0.0.0.2654.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.0_CAw8j_O_0" target="_blank">{{$informacion->importador}}</a></td>
-                                                    <td>{{$informacion->exportador}}</td>
+                                                    <td>{{$informacion->partida}}</td>
+                                                    <td>{{$informacion->aduana}}</td>
+                                                    <td>{{$informacion->numero}}</td>
+                                                    <td>{{$informacion->fecha}}</td>
+                                                    <td>{{$informacion->nombre_comercial}}</td>
+                                                    <td><a href="https://www.google.com/search?client=windows&channel=fs&ei=mZyUWqrVBYOG5wL34Y3ABg&q={{$informacion->inportador}}&oq={{$informacion->inportador}}&gs_l=psy-ab.3..0i71k1l5.0.0.0.2654.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.0_CAw8j_O_0" target="_blank">{{$informacion->inportador}}</a></td>
+                                                    <td>{{$informacion->pais}}</td>
+													<td>{{$informacion->puerto}}</td>	
+													<td>{{$informacion->peso_neto}}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
                                     </table>
+									{{$informacions->render("pagination::bootstrap-4")}}
                                 </div>
                             </div>
                         </div>

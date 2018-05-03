@@ -20,3 +20,68 @@
 .colormoca-asul{
     color: #2980b9;
 }
+.login{
+    background: url("../images/fondo-icex.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.login form{
+    background: #fff;
+    padding:2em 4em;
+    border-radius: 10px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #00C1F0;
+    border-color: #00C1F0;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(10, 96, 117);
+    border-color: rgb(10, 96, 117);
+}
+.seccion{
+    height: 100vh;
+    background: red;
+}
+.menu--ariba{
+    background: #fff;
+    padding: 5px 0;
+    box-shadow: 2px 2px 5px rgb(31, 31, 31);
+}
+.menu--lateral{
+    background: #852828;
+    padding: 4em 0 0 0;
+    box-shadow: 500px 500px 500px 500px rgb(31, 31, 31);
+}
+.menu--lateral a{
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+}
+.contenedor{
+    background: #dfe6e9;
+}
+.contenedor--contenido{
+    background: #fff;
+    margin: 4em 0 1em 0;
+}
+.menu_lateral--item{
+    padding:  0 0 0 2em;
+}
+.menu_lateral--item{
+    color: #fff;
+    font-size: 15px;
+}
+.menu_lateral--item:hover{
+    color: rgb(133, 133, 133);
+}
+.menu_lateral--item a:hover{
+    color: rgb(133, 133, 133);
+}
+
+.contenedor--contenido_titulo{
+    padding: 1em 0 0 0;
+}
+

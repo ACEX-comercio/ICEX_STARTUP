@@ -40,14 +40,14 @@ class BusquedaController extends Controller
             //echo $request->nbinportador;
         }*/
         
-        $informacions = DB::table('inteligencia')
+        /*$informacions = DB::table('inteligencia')
             ->join('paises', function($join) use ($request) {
                 $join->on('inteligencia.puerto', 'LIKE', DB::raw("CONCAT('%', paises.codigo_iso)"))
                 ->where('inteligencia.partida_arancelaria','like','%'.$request->ptarancelaria.'%')
                 ->where('inteligencia.exportador','like','%'.$request->nbexportador.'%')
                 ->where('inteligencia.importador','like','%'.$request->nbinportador.'%')
                 ->orwhere('paises.codigo_iso','like','%'.$request->pais.'%');})
-            ->get();
+            ->get();*/
         /*$informacion=Inteligencia::where('descripcion_comercial','like','%'.$request->nbcomercial.'%')
         ->where('partida_arancelaria','like','%'.$request->ptarancelaria.'%')
         ->where('exportador','like','%'.$request->nbexportador.'%')
@@ -56,6 +56,20 @@ class BusquedaController extends Controller
         dd($informacion);*/
         
         //dd($posts);
+        /*$informacions = DB::table('busquedas')
+            ->orwhere('busquedas.partida','like','%'.$request->ptarancelaria.'%')
+            //->where('busquedas.exportador','like','%'.$request->nbexportador.'%')
+            ->orwhere('busquedas.inportador','like','%'.$request->nbinportador.'%')
+            ->orwhere('busquedas.nombre_comercial','like','%'.$request->nbcomercial.'%')
+            ->get();
+        return view('layouts.buscar',compact('informacions'));*/
+        $informacions = DB::table('busquedas')
+            ->where('busquedas.partida','like','%'.$request->ptarancelaria.'%')
+            //->where('busquedas.exportador','like','%'.$request->nbexportador.'%')
+            ->orwhere('busquedas.inportador','like','%'.$request->nbinportador.'%')
+            ->where('busquedas.nombre_comercial','like','%'.$request->nbcomercial.'%')
+            ->where('busquedas.pais','like','%'.$request->pais.'%')
+            ->paginate(10);
         return view('layouts.buscar',compact('informacions'));
     }
 }

@@ -100,12 +100,30 @@
 						
 						<!-- Navigation Menu -->
 						<nav id="navigation-menu" class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-right editContent">													
-								
-								<li><a href="/">Inicio</a></li>															
-								<li><a href="/inteligencia">Inteligencia comercial</a></li>
-								<li><a href="/analisis">Analisis de mercado</a></li>	
-								<li><a href="#pricing">Planes y productos</a></li>	
+							<ul class="nav navbar-nav navbar-right editContent">
+								@guest
+									<li><a href="/">Inicio</a></li>															
+									<li><a href="#pricing">Planes y productos</a></li>
+									<li><a href="/inicio">Login</a></li>
+									<li><a href="/registro">Registro</a></li>		
+								@else
+									<li><a href="/">Inicio</a></li>															
+									<li><a href="/inteligencia">Inteligencia comercial</a></li>
+									<li><a href="/analisis">Analisis de mercado</a></li>	
+									<li>
+										<a href="#" role="button" aria-expanded="false" aria-haspopup="true">
+											{{ Auth::user()->nombre }} <span class="caret"></span>
+										</a>
+									</li>
+									<li>
+										<a class="nav-link active"  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+										SALIR
+										</a>
+										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+											{{ csrf_field() }}
+										</form>
+									</li>
+								@endguest
 							</ul>
 						</nav>  <!-- End Navigation Menu -->
 						
@@ -131,7 +149,7 @@
 								<h2>RASTREA Y ENCUENTRA POTENCIALES CLIENTES EN TODO EL MUNDO</h2>	
 
 								<!-- Button -->
-								<a class="btn btn-lg btn-tra m-top-10" href="/inteligencia">Pruebalo Gratis</a>		
+								<a class="btn btn-lg btn-tra m-top-10" href="#pricing">Pruebalo ya</a>		
 									
 							</div>
 
@@ -229,7 +247,7 @@
 								</ul>
 										
 								<!-- Table Button  -->
-								<a href="#" class="btn btn-lg">Selececionar</a>
+								<a href="/registro" class="btn btn-lg">Selececionar</a>
 
 							</div>
 						</div>
@@ -260,7 +278,7 @@
 								</ul>
 										
 								<!-- Table Button  -->
-								<a href="#" class="btn btn-lg">SSelececionar</a>
+								<a href="/registro" class="btn btn-lg">SSelececionar</a>
 
 							</div>
 						</div>
@@ -289,7 +307,7 @@
 								</ul>
 										
 								<!-- Table Button  -->
-								<a href="#" class="btn btn-lg">Selececionar</a>
+								<a href="/registro" class="btn btn-lg">Selececionar</a>
 
 							</div>
 						</div>

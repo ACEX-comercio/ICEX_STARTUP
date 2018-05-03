@@ -28,18 +28,28 @@
 					</button>
 					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
 						<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/">INICIO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/inteligencia">INTELIGENCIA COMERCIAL</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link p-2 text-nav-moca" href="/analisis">ANALISIS DE MERCADO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link p-2 text-nav-moca" href="/./#pricing">PLANES Y PRODUCTOS</a>
-						</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="/">INICIO</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="/inteligencia">INTELIGENCIA COMERCIAL</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link p-2 text-nav-moca" href="/analisis">ANALISIS DE MERCADO</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca" href="#" role="button" aria-expanded="false" aria-haspopup="true">
+									{{ Auth::user()->nombre }} <span class="caret"></span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link p-2 text-nav-moca"  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+									SALIR
+								</a>
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+									{{ csrf_field() }}
+								</form>
+							</li>
 						</ul>
 					</div>
 				</nav>

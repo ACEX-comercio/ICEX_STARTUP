@@ -26,7 +26,16 @@ Route::get('/muestra', 'PruevaController@mostrar');
 Route::get('/analisis', function () {
     return view('layouts.analisis');
 });
+
+Route::resource('/registro', 'UsuarioregistroController');
+
+Route::resource('/inicio', 'UsuarioController');
+
 Route::get('/buscar','BusquedaController@buscar');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
