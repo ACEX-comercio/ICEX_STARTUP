@@ -63,12 +63,22 @@ class BusquedaController extends Controller
             ->orwhere('busquedas.nombre_comercial','like','%'.$request->nbcomercial.'%')
             ->get();
         return view('layouts.buscar',compact('informacions'));*/
-        $informacions = DB::table('busquedas')
+        
+        
+        /*$informacions = DB::table('busquedas')
             ->where('busquedas.partida','like','%'.$request->ptarancelaria.'%')
             //->where('busquedas.exportador','like','%'.$request->nbexportador.'%')
             ->orwhere('busquedas.inportador','like','%'.$request->nbinportador.'%')
             ->where('busquedas.nombre_comercial','like','%'.$request->nbcomercial.'%')
             ->where('busquedas.pais','like','%'.$request->pais.'%')
+            ->paginate(10);
+        return view('layouts.buscar',compact('informacions'));*/
+
+        $informacions = DB::table('busquedas')
+            ->where('busquedas.pais','like','%'.$request->pais.'%')
+            ->where('busquedas.partida','like','%'.$request->ptarancelaria.'%')
+            ->where('busquedas.nombre_comercial','like','%'.$request->nbcomercial.'%')
+            ->where('busquedas.inportador','like','%'.$request->nbinportador.'%')
             ->paginate(10);
         return view('layouts.buscar',compact('informacions'));
     }
