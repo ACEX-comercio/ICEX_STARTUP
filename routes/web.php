@@ -33,12 +33,9 @@ Route::group(['middleware' => 'rolesusuario'], function () {
     
     Route::get('/buscar','BusquedaController@buscar');
 });
-Route::get('/admin/usuario', function () {
-    return view('admin.adminusuario');
-});
-Route::get('/admin/cliente', function () {
-    return view('admin.admincliente');
-});
+
+Route::resource('/admin/usuario', 'PersonalController');
+Route::resource('/admin/cliente', 'ClienteController');
 
 Auth::routes();
 
