@@ -10,28 +10,35 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => 'rolesusuario'], function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+    
+    Route::get('/inteligencia', function () {
+        return view('layouts.inteligencia');
+    });
+    Route::get('/muestra', 'PruevaController@mostrar');
+    /*Route::get('/muestra', function () {
+        return view('layouts.analisispost');
+    });*/
+    
+    Route::get('/analisis', function () {
+        return view('layouts.analisis');
+    });
+    
+    Route::resource('/registro', 'UsuarioregistroController');
+    
+    Route::resource('/inicio', 'UsuarioController');
+    
+    Route::get('/buscar','BusquedaController@buscar');
 });
-
-Route::get('/inteligencia', function () {
-    return view('layouts.inteligencia');
+Route::get('/admin/usuario', function () {
+    return view('admin.adminusuario');
 });
-Route::get('/muestra', 'PruevaController@mostrar');
-/*Route::get('/muestra', function () {
-    return view('layouts.analisispost');
-});*/
-
-Route::get('/analisis', function () {
-    return view('layouts.analisis');
+Route::get('/admin/cliente', function () {
+    return view('admin.admincliente');
 });
-
-Route::resource('/registro', 'UsuarioregistroController');
-
-Route::resource('/inicio', 'UsuarioController');
-
-Route::get('/buscar','BusquedaController@buscar');
 
 Auth::routes();
 
